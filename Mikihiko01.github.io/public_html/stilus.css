@@ -8,8 +8,6 @@ main{
 
 }
 
-
-
 header{
     background-color: orange;
 
@@ -28,11 +26,18 @@ aside{
 
 }
 
-
+.info {
+  background-color: #e7f3fe;
+  border-left: 6px solid #2196F3;
+}
 footer{
     background-color: #ff9999;
     padding: 1px;
 
+}
+#uzenet{
+    width: 400px;
+    height: auto;
 }
 @media screen and (max-width:800px){
     main{

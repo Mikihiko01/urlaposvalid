@@ -9,7 +9,7 @@ function ID(nev) {
 function init() {
 
     ID("kuld").addEventListener("click", validalas);
-    //sendMail(); return false;
+
 }
 function validalas() {
     //  console.log("validáció");
@@ -64,20 +64,24 @@ function validalas() {
 
     }
 
+
+
     $("aside section:nth-child(1) p")[0].innerHTML = uzenet;
     $("aside section:nth-child(2) p")[0].innerHTML = megadottAdatok;
 
 
 
 }
-        //Üzenet küldés
+//Üzenet küldés
+function sendMail() {
 
-//function sendMail() {
-//    var link = "mailto: Írjon be id egy emailt !!"
-//            + "?cc=tellad.adam@gmail.com"
-//            + "&subject=" + encodeURIComponent("Üzenetem: ")
-//            + "&body=" + encodeURIComponent(ID('uzenet').value);
-//    window.location.href = link; 
-//}
+    var link = "mailto:tellad.adam@gmail.com"
+            + "?cc=tellad.adam@gmail.com"
+            + "&subject=" + encodeURIComponent("Üzenetem: ")
+            + "&body=" + encodeURIComponent(ID('uzenet').value);
+    window.location.href = link;
+
+}
+
 
 
