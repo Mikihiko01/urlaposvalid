@@ -46,14 +46,16 @@ function validalas() {
         ID("phone").style.border = "2px solid red";
     } else {
         ID("phone").style.border = "none";
+        megadottAdatok += "Név:" + ID("nev").value + "<br>";
         
     }
-    var email = / [\@.com]/;
-    if (!reg.test(ID("nev").value)) {
-        uzenet += "Szélesgombal elválasztva legyen! <br>";
-        ID("phone").style.border = "2px solid red";
+    var email = /[[a-z]+@[a-z]+.com$]/;
+    if (!reg.test(ID("email").value)) {
+        uzenet += "Hiányzik a @ jel vagy a .com! <br>";
+        ID("email").style.border = "2px solid red";
     } else {
-        ID("phone").style.border = "none";
+        ID("email").style.border = "none";
+        megadottAdatok += "Név:" + ID("nev").value + "<br>";
         
     }
 }
